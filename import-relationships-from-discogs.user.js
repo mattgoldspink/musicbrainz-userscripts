@@ -484,6 +484,18 @@ function getArtistRoles(artist) {
             if (/Co /.test(rolePart[1])) {
                 additionalAttributes.push('co');
             }
+            if (/Executive/.test(rolePart[1])) {
+                additionalAttributes.push('executive');
+            }
+            if (/Associate/.test(rolePart[1])) {
+                additionalAttributes.push('associate');
+            }
+            if (/Guest/.test(rolePart[1])) {
+                additionalAttributes.push('guest');
+            }
+            if (/Solo/.test(rolePart[1])) {
+                additionalAttributes.push('solo');
+            }
             const mapping = ENTITY_TYPE_MAP[actualRole];
             if (!mapping && INSTRUMENTS[actualRole] !== undefined) {
                 // check if it's an instrument
@@ -1065,6 +1077,10 @@ const ENTITY_TYPE_MAP = {
         linkType: 'producer',
         attributes: ['co'],
     },
+    'Post Production': {
+        entityType: 'artist',
+        linkType: 'producer',
+    },
     Engineer: {
         entityType: 'artist',
         linkType: 'engineer',
@@ -1165,7 +1181,7 @@ const ENTITY_TYPE_MAP = {
         entityType: 'artist',
         linkType: 'publisher',
     },
-    'liner notes': {
+    'Liner Notes': {
         entityType: 'artist',
         linkType: 'liner notes',
     },
