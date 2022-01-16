@@ -475,6 +475,11 @@ function getArtistRoles(artist) {
                     artist: artist,
                 });
             }
+            if (/Design/.test(rolePart[1]) && actualRole === 'Cover') {
+                return Object.assign({}, ENTITY_TYPE_MAP['Design'], {
+                    artist: artist,
+                });
+            }
             if (/Additional/.test(rolePart[1])) {
                 additionalAttributes.push('additional');
             }
