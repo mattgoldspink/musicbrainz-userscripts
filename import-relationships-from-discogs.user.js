@@ -1183,7 +1183,7 @@ const ENTITY_TYPE_MAP = {
         entityType: 'artist',
         linkType: 'photography',
     },
-    'instruments technician': {
+    'Technician': {
         entityType: 'artist',
         linkType: 'instruments technician',
     },
@@ -1194,6 +1194,30 @@ const ENTITY_TYPE_MAP = {
     'Liner Notes': {
         entityType: 'artist',
         linkType: 'liner notes',
+    },
+    'Contractor': {
+        entityType: 'artist',
+        linkType: 'miscellaneous support',
+    },
+    'Coordinator': {
+        entityType: 'artist',
+        linkType: 'miscellaneous support',
+    },
+    'Management': {
+        entityType: 'artist',
+        linkType: 'miscellaneous support',
+    },
+    'Tour Manager': {
+        entityType: 'artist',
+        linkType: 'miscellaneous support',
+    },
+    'Public Relations': {
+        entityType: 'artist',
+        linkType: 'miscellaneous support',
+    },
+    'Promotion': {
+        entityType: 'artist',
+        linkType: 'miscellaneous support',
     },
 };
 
